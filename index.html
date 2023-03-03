@@ -15,7 +15,7 @@
 
       <div class="form__form_element form_element">
         <label class="form_element__label" for="password">Пароль</label>
-        <input class="form_element__input" id="password" type="password" />
+        <input class="form_element__input" id="password" type="password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}" title="Пароль должен быть не менее 6 символов, должен содержать число, буквы разных регистров и символы" required/>
       </div>
 
       <div class="form__form_element form_element">

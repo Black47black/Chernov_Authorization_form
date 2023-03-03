@@ -50,12 +50,6 @@ form.addEventListener('submit', function (e) {
   alert('Добро пожаловть!');
 }); 
 
-// setInterval(function () {
-//   var now = new Date();
-//   var clock = document.getElementById("clock");
-//   clock.innerHTML = now.toLocaleTimeString();
-// }, 1000);
-
 function zeroFirstFormat(value)
 {
     if (value < 10)
@@ -65,7 +59,6 @@ function zeroFirstFormat(value)
     return value;
 }
 
-/* функция получения текущей даты и времени */
 function date_time()
 {
     var current_datetime = new Date();
@@ -90,7 +83,6 @@ function date_time()
     return Ddays+": "+day+"."+month+"."+year+" || время:"+hours+":"+minutes+":"+seconds;
 }
 
-/* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
 document.getElementById('date_clock').innerHTML = date_time();
 
 setInterval(function () {
