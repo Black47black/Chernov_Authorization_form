@@ -51,6 +51,8 @@ body {
 }
 
 
-clock {
-
+.clock {
+  position: absolute;
+  bottom: 10px;
+  
 }
