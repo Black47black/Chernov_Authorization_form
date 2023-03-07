@@ -10,7 +10,7 @@
     <form class="form" id="form">
       <div class="form__form_element form_element">
         <label class="form_element__label" for="login">Логин</label>
-        <input class="form_element__input" id="login" type="text" />
+        <input class="form_element__input" id="login" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required/>
       </div>
 
       <div class="form__form_element form_element">
@@ -20,7 +20,7 @@
 
       <div class="form__form_element form_element">
         <label class="form_element__label" for="Phone">Телефон</label>
-        <input class="form_element__input" id="Phone" type="Phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$z" title="Телефон должен начинаться на цифру 7, +7 или 8" required/>
+        <input class="form_element__input" id="Phone" type="Phone" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" title="Телефон должен начинаться на цифру 7, +7 или 8" required/>
       </div>
 
       <div class="form__form_element form_element">
